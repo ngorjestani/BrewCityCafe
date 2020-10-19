@@ -1,0 +1,332 @@
+* {
+    box-sizing: border-box;
+}
+
+header, main, nav, footer, section, article, figure, figcaption, aside {
+    display: block;
+}
+
+body {
+    font-family: Verdana, Arial, sans-serif;
+    background-color: #8A6040;
+    color: #EEEEEE;
+}
+
+.wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #37271F;
+    min-width: 550px;
+    max-width: 1280px;
+    padding-bottom: 1em;
+}
+
+/*Header*/
+
+header {
+    height: 120px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+h1 {
+    font-weight: bold;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.5em;
+    letter-spacing: .20em;
+}
+
+/*Nav*/
+
+nav {
+    background-color: #111111;
+    font-weight: bold;
+    height: 50px;
+}
+
+.navbar {
+    list-style-type: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #EEEEEE;
+    display: block;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar li a:hover {
+    color: #AAAAAA;
+}
+
+.socialmedia {
+    list-style-type: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.socialmedia li {
+    display: inline-block;
+    padding: 0.5em 0.25em;
+}
+
+.socialmedia li a {
+    margin: 0.5em;
+}
+
+/*Main*/
+
+.main {
+    margin: 1em;
+}
+
+#abouthero {
+    margin: 1em auto;
+    height: 310px;
+    width: 600px;
+    background-image: url("../img/about-hero.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#homepage-img {
+    float: left;
+    width: 50%;
+    height: 350px;
+}
+
+#homepage-img img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#homepage-maintext {
+    background-color: #5384A2;
+    float: right;
+    width: 50%;
+    height: 332px;
+    padding: 1em;
+}
+
+#homepage-maintext h3 {
+    font-size: 1.75em;
+}
+
+button {
+    color: #EEEEEE;
+    padding: .5em 1em;
+    background-color: #111111;
+    border: none;
+}
+
+#homepage-maintext button a {
+    text-decoration: none;
+    color: #EEEEEE;
+}
+
+#homepage-maintext p {
+    font-size: 1.25em;
+}
+
+.contact-info {
+    clear: both;
+    padding: 2em;
+}
+
+#mobile {
+    display: none;
+}
+
+table {
+    margin: auto;
+    padding: 1em;
+    width: 50%;
+    background-color: #5384A2;
+}
+
+#contact-text {
+    text-align: center;
+}
+
+#comment-form {
+    margin: auto;
+    background-color: #5384A2;
+}
+
+form {
+    text-align: center;
+    display: inline-block;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 2em;
+}
+
+label {
+    line-height: 1.5em;
+}
+
+form input, textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form button[type=submit] {
+    margin: 1em;
+}
+
+#about {
+    width: 70%;
+    margin: auto;
+}
+
+#menu-header {
+    text-align: center;
+    font-size: 2em;
+}
+
+#menu-dl {
+    border: 1px solid white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+}
+
+.menu-item {
+    height: 120px;
+    padding: 10px;
+    display: block;
+}
+
+.menu-item img {
+    margin: .5em;
+}
+
+dl img {
+    display: inline-block;
+    float: left;
+}
+
+dt {
+   margin: .5em;
+}
+
+dd {
+    margin: .5em;
+}
+
+/*Footer*/
+
+footer {
+    clear: none;
+    font-size: small;
+    font-style: italic;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        margin: 0;
+    }
+
+    .wrapper {
+        width: 100%;
+        margin: 0;
+        min-width: 0;
+    }
+
+    header {
+        height: auto;
+    }
+
+    h1 {
+        letter-spacing: 0.1em;
+    }
+
+    #homepage-img {
+        width: 100%;
+        height: auto;
+        float: none;
+        overflow: hidden;
+    }
+
+    #homepage-img img {
+        width: auto;
+        height: auto;
+    }
+
+    #homepage-maintext {
+        width: 100%;
+        float: none;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    nav {
+        height: auto;
+    }
+
+    .navbar {
+        display: block;
+        float: none;
+    }
+
+    .navbar li {
+        float: none;
+        display: block;
+        height: 2em;
+        width: 100%;
+        margin: auto;
+    }
+
+    .navbar li a {
+        margin: auto;
+        text-align: center;
+        line-height: 1em;
+    }
+
+    .socialmedia {
+        display: block;
+        float: none;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    #menu-dl {
+        width: 100%;
+        border: none;
+    }
+
+    .menu-item {
+        height: auto;
+    }
+
+    dl img {
+        display: block;
+        float: none;
+    }
+
+    form {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
